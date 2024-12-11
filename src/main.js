@@ -74,11 +74,11 @@ Array(200).fill().forEach(addStar)
 
 // background
 
-const spaceTexture = new THREE.TextureLoader().load('src/assets/sunset.jpg')
+const spaceTexture = new THREE.TextureLoader().load('/src/assets/sunset.jpg')
 scene.background = spaceTexture
 
 // avatar
-const tadeoTexture = new THREE.TextureLoader().load('src/assets/headshot-square.jpg')
+const tadeoTexture = new THREE.TextureLoader().load('/src/assets/headshot-square.jpg')
 
 const tadeo = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -88,8 +88,8 @@ const tadeo = new THREE.Mesh(
 scene.add(tadeo)
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load('src/assets/moon.jpg')
-const normalTexture = new THREE.TextureLoader().load('src/assets/normal.jpg')
+const moonTexture = new THREE.TextureLoader().load('/src/assets/moon.jpg')
+const normalTexture = new THREE.TextureLoader().load('/src/assets/normal.jpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),

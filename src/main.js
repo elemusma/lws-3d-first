@@ -8,12 +8,13 @@ function Header() {
 
   // Create an image element
   const img = document.createElement('img');
-  img.src = 'src/assets/sunset.jpg'; // Path to your image file
+
+  img.src = 'assets/sunset.jpg'; // Path to your image file
   img.alt = 'Logo';
 
   // Create a paragraph element
   const p = document.createElement('p');
-  p.textContent = 'hello';
+  p.textContent = 'helloss';
 
   // Append both elements to the container
   container.appendChild(img);
@@ -74,11 +75,11 @@ Array(200).fill().forEach(addStar)
 
 // background
 
-const spaceTexture = new THREE.TextureLoader().load('/src/assets/sunset.jpg')
+const spaceTexture = new THREE.TextureLoader().load('assets/sunset.jpg')
 scene.background = spaceTexture
 
 // avatar
-const tadeoTexture = new THREE.TextureLoader().load('/src/assets/headshot-square.jpg')
+const tadeoTexture = new THREE.TextureLoader().load('assets/headshot-square.jpg')
 
 const tadeo = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -88,8 +89,8 @@ const tadeo = new THREE.Mesh(
 scene.add(tadeo)
 
 // Moon
-const moonTexture = new THREE.TextureLoader().load('/src/assets/moon.jpg')
-const normalTexture = new THREE.TextureLoader().load('/src/assets/normal.jpg')
+const moonTexture = new THREE.TextureLoader().load('assets/moon.jpg')
+const normalTexture = new THREE.TextureLoader().load('assets/normal.jpg')
 
 const moon = new THREE.Mesh(
   new THREE.SphereGeometry(3,32,32),
